@@ -31,6 +31,11 @@ module.exports = function(server) {
   router.get('/online', function(req, res){
       res.json({message:'O servidor está online =)'});
   });
+  
+  //Rota para simular login
+  router.get('/admin/1234', function(req, res){
+      res.json({message:'Login efetuado com sucesso! =)'});
+  });
 
   //API methods in router:
   
