@@ -1,0 +1,28 @@
+{
+  "name": "NativApps-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "start": "nodemon loader.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoLuizNunes/API-NodeExpressMongo.git"
+  },
+  "author": "Thiago Luiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoLuizNunes/API-NodeExpressMongo/issues"
+  },
+  "homepage": "https://github.com/ThiagoLuizNunes/API-NodeExpressMongo#readme",
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "express": "4.15.3",
+    "mongoose": "5.0.9",
+    "node-restful": "0.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "1.14.11"
+  }
+}
