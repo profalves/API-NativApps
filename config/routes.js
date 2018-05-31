@@ -9,6 +9,21 @@ module.exports = function(server) {
   //Todo request a api passará por essa função de callback primeiramente e podemos usar para log do lado do servidor
   router.use(function(req, res, next){
       console.log('Alguém está fazendo requisição a api ;)');
+      
+      // Adicionando headers:
+      
+      // Website que deseja permitir conectar
+      res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+
+      // Métodos que deseja permitir
+      res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+      // Configurar headers das requisições
+      res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+      /* Defina como 'true' se precisar que o site inclua cookies nos pedidos enviados
+         para a API (por exemplo, caso você use sessões) */
+      res.setHeader('Access-Control-Allow-Credentials', true);
       next();
   });
 
