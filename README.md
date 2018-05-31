@@ -51,6 +51,34 @@ Esta é uma REST API que foi construída para o sistema web da [Nativa Apps](htt
 |   Edita o item com o ID especificado     |       200        |  `PUT`   | /api/aluno/(id)
 |   Deleta o item com o ID especificado    |       200        |  `DELETE`| /api/aluno/(id)
 
+
+## Envios por POST ##
+
+Aluno:
+
+    Aluno : {
+      nome: 'nome do aluno',
+      sobrenome: 'sobrenome do aluno',
+      genero: '(M) para Masculoino ou (F) para Feminino',
+    }
+
+Professor:
+
+    Professor : {
+      nome: 'nome do aluno',
+      sobrenome: 'sobrenome do aluno',
+      genero: '(M) para Masculoino ou (F) para Feminino',
+    }
+
+Curso:
+
+    Curso : {
+      nome: 'nome do curso',
+      obs: 'observação do curso'
+    }
+    
+O ID é gerado automaticamente, pelo MongoDB.
+
 ## Criado por ##
 
 * Rodrigo Alves de Oliveira ([Site](http://rodrigoalves.hol.es/), [Github](https://github.com/profalves) e [Linkedin](https://www.linkedin.com/in/rodrigo-alves-47842323/)). igo.sud@hotmail.com
