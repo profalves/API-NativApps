@@ -21,7 +21,7 @@ Esta é uma REST API que foi construída para o sistema web da [Nativa Apps](htt
 2. Inicie o MongoDB
   - user@user:~/shell$ **mongod**
   
-  **O comando acima é para se caso utilize na API um banco de dados MongoDB localmente. Nesta API, já está configurada um banco de dados na nuvem, hospedado na **[MLab](https://mlab.com/welcome/)
+  **O comando acima é para se caso utilize na API um banco de dados MongoDB localmente. Nesta API, já está configurada um banco de dados na nuvem, hospedado na** [MLab](https://mlab.com/welcome/)
   
   Para configurar o banco de dados MongoDB, edite o arquivo config/database.js, na linha 2
 
